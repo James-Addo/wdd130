@@ -43,6 +43,7 @@ nav a {
 
 h1 {
     color: darkblue;
+    margin: 20px;
 }
 
 main img {
@@ -59,7 +60,8 @@ p {
 }
 
 main p {
-    margin-left: 10px;
+    font-size: 17px;
+    margin-left: 20px;
     margin-top: 15px;
 }
 
@@ -76,4 +78,8 @@ footer {
     padding: 1rem;
     background-color: rgb(237, 231, 231);
     color: black;
+}
+
+.indent {
+    padding-left: 2rem;
 }
