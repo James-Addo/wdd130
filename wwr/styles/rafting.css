@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #16166B;
-    /* Federal blue */
+    --primary-color: #120A8F;
+    /* Ultramarine */
     --secondary-color: #BA160C;
     /* Engineering Orange */
     --accent1-color: #FFEFD5;
@@ -14,6 +14,10 @@
 header {
     background-color: var(--accent2-color);
     color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    align-items: center;
+    border-bottom: 2px double #000;
 }
 
 * {
@@ -36,13 +40,39 @@ footer {
 
 header img {
     width: 150px;
-    margin-left: 20px;
+    height: auto;
+    margin: 0 20px 0 100px;
+    grid-column: 1;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-column: 2/4;
+    justify-content: end;
+    padding: 0;
+    font-family: var(--heading-font);
+    margin-right: 40px;
+}
+
+header nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+header nav a:hover {
+	color: var(--secondary-color);
+	font-weight: 1000;
+	text-decoration: underline;
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 nav,
@@ -53,12 +83,9 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero {
     position: relative;
+    margin: 5px auto;
 }
 
 .hero img {
@@ -97,4 +124,115 @@ h1 {
     border: 1px solid rgba(0 0 0 / 0.6);
     margin: 5px;
     box-shadow: 0 0 30px gray;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    width: 100%;
+    margin: 16px auto;
+    padding: 0;
+    background-color: #F0F8FF; /* Alice Blue */
+}
+
+.history h2 {
+    width: 100px;
+    grid-column: 1/4;
+    text-align: center;
+    align-self: center;
+    margin: 15px auto 0 auto;
+    color: var(--primary-color);  
+    border-radius: 10px; 
+    box-shadow: 0 0 10px gray;
+}
+
+.history img {
+    display: block;
+    width: 200px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 26px;
+    height: 155px; 
+    box-shadow: 0 0 15px gray;
+}
+
+.history img:hover {
+    transform: scale(1.5);
+}
+
+.history .p1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #000; 
+}
+
+.history .p2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: #000; 
+}
+
+.adventure {
+    width: 100%;
+    padding: 0;
+    margin: 16px auto;
+    padding: 10px;
+}
+
+.adventure h2 {
+    text-align: center;
+    margin: 5px auto 20px auto;
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    width: 300px;
+    opacity: 0.8; 
+}
+
+.adventure-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.adventure-pics figure img {
+    display: block;
+    max-width: 150px;
+    min-height: 100px;
+    box-shadow: 0 0 17px gray;
+}
+
+.adventure-pics figure img:hover {
+    zoom: 1.3;
+}
+
+.adventure-pics figcaption {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 10px;
+}
+
+footer {
+    background-color: var(--accent2-color) ;
+    display: grid;
+    grid-template-columns: 2fr 170px;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 40px;
+}
+
+footer p {
+    grid-column: 1;
+    text-align: right;
+    padding: 0;
+}
+
+.socialmedia {
+    grid-column: 2;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 4px;
 }
