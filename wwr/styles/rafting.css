@@ -66,9 +66,9 @@ header nav a {
 }
 
 header nav a:hover {
-	color: var(--secondary-color);
-	font-weight: 1000;
-	text-decoration: underline;
+    color: var(--secondary-color);
+    font-weight: 1000;
+    text-decoration: underline;
 }
 
 h1,
@@ -104,7 +104,8 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent2-color);
-    color: #A91101; /* Turkey red */
+    color: #A91101;
+    /* Turkey red */
 }
 
 .hero article {
@@ -113,7 +114,8 @@ h1 {
     background-color: var(--accent1-color);
     height: 85px;
     padding: 1px;
-    color: #1B1B1B; /* Eerie black */
+    color: #1B1B1B;
+    /* Eerie black */
 }
 
 .hero article p {
@@ -134,7 +136,8 @@ h1 {
     width: 100%;
     margin: 16px auto;
     padding: 0;
-    background-color: #F0F8FF; /* Alice Blue */
+    background-color: #F0F8FF;
+    /* Alice Blue */
 }
 
 .history h2 {
@@ -143,8 +146,8 @@ h1 {
     text-align: center;
     align-self: center;
     margin: 15px auto 0 auto;
-    color: var(--primary-color);  
-    border-radius: 10px; 
+    color: var(--primary-color);
+    border-radius: 10px;
     box-shadow: 0 0 10px gray;
 }
 
@@ -154,7 +157,7 @@ h1 {
     grid-column: 2/3;
     grid-row: 2/3;
     margin-top: 26px;
-    height: 155px; 
+    height: 155px;
     box-shadow: 0 0 15px gray;
 }
 
@@ -165,13 +168,13 @@ h1 {
 .history .p1 {
     grid-column: 1/2;
     grid-row: 2/3;
-    color: #000; 
+    color: #000;
 }
 
 .history .p2 {
     grid-column: 3/4;
     grid-row: 2/3;
-    color: #000; 
+    color: #000;
 }
 
 .adventure {
@@ -188,7 +191,7 @@ h1 {
     border-radius: 10px;
     background-color: var(--secondary-color);
     width: 300px;
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .adventure-pics {
@@ -215,7 +218,7 @@ h1 {
 }
 
 footer {
-    background-color: var(--accent2-color) ;
+    background-color: var(--accent2-color);
     display: grid;
     grid-template-columns: 2fr 170px;
     align-items: center;
@@ -237,4 +240,141 @@ footer p {
 .socialmedia a {
     text-decoration: none;
     margin: 4px;
+}
+
+h3 {
+    color: #000;
+    text-align: left;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;  
+}  
+
+.cont {
+    height: 50px;
+    margin-bottom: 5px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+    align-items: center;
+}
+
+.com-info {
+    margin-top: 20px;
+    width: 400px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-items: center;
+}
+
+.com-info p, h3 {
+    margin: 12px 0 12px 0;
+    padding-top: 0;
+    padding-left: 5px;
+}
+
+.map iframe {
+    margin: 30px 0 0 20px;
+    width: 350px;
+    height: 240px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.employee {
+    margin: 30px 0 10px 20px;
+}
+
+.in-touch h2 {
+    margin: 40px 0 15px 20px;
+    color: var(--secondary-color);
+    height: 38px;
+    padding: 5px;
+}
+
+.employee-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.employee-pic img {
+    width: 220px;
+    height: 200px;
+    margin: 5px 0 5px 0;
+    box-shadow: 0 0 17px gray;
+}
+
+.employee-pic img:hover {
+    zoom: 1.2;
+}
+
+.employee-pic figcaption {
+    text-align: center;
+    color: #000;
+}
+
+form {
+    width: 600px;
+    margin: 0 0 0 20px;
+    padding: 2rem;
+    border: 1px solid rgba(0 0 0 / 0.1);
+    border-radius: 1rem;
+    background-color: #eee;
+    display: grid;
+    grid-gap: 10px;
+    color: #000;
+    opacity: 0.7;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: var(--body-font);
+}
+
+.radio-item label {
+    margin-left: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.radio-item input {
+    height: 14px;
+}
+
+label {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+input {
+    height: 32px;
+}
+
+.check-item {
+    margin-top: 10px;
+}
+
+.check-item input {
+    height: 15px;
+    margin-left: 20px;
+}
+
+button {
+    margin: 20px auto 0;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: green;
 }

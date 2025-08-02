@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us Page</title>
+        <meta name="description" content="The Web Development Fundamentals Contact Us Page of Rafting Site Project">
+        <meta name="author" content="James Emmanuel Addo">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.jpg" alt="Rafting Company Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="contact">
+                <div class="cont">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="com-info">
+                    <h2>Company Information</h2>
+                    <h3>Address</h3>
+                    <p>Rapids White Water Rafting Company</p>
+                    <h3>Phone number(s)</h3>
+                    <p>+233 44-444-4444</p>
+                    <h3>Email</h3>
+                    <p>rapids@rafting.com</p>
+                </div>
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40034.6379872814!2d-0.6853590766698218!3d5.527520119569406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sgh!4v1753821008732!5m2!1sen!2sgh" 
+                    width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+           <div class="employee">
+            <h2>Employee profile images</h2>
+           </div>
+           <div class="employee-pic">
+                <figure>
+                    <img src="images/employee-image1.jpg" alt="Rafting Consultant">
+                    <figcaption>Rafting Consultant</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-image2.jpg" alt="River Guide">
+                    <figcaption>River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-image3.jpg" alt="Gear Manager">
+                    <figcaption>Gear Manager</figcaption>
+                </figure>
+            </div>
+            <div class="in-touch">
+                <h2>Get in touch with us</h2>
+            </div>
+            <form> 
+                <label for="username">Full name</label>
+                <input type="text" id="username" name="username">
+                <label for="emailaddress">Email address</label>
+                <input type="email" id="emailaddress" name="emailaddress">
+                <label>Purpose of message</label>
+                <div class="radio-item">
+                    <input type="radio" id="inquiry" name="purpose">
+                    <label for="inquiry">General Inquiry</label><br>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="question" name="purpose">
+                    <label for="question">Reservation Question</label><br>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="suggestion" name="purpose">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <div class="check-item">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                <button type="submit">Submit your message</button>             
+            </form>
+        </main>
+        <footer>
+            <a href="https://app.moqups.com/MQpSf4ZY2RTJxeigSIhE5dcnv9cBJuWv/view/page/ad64222d5">Wireframe</a>
+            <p>©️2025 🌲 Rapids White Water Rafting Company 🌲 James Emmanuel Addo</p>
+            <nav class="socialmedia">
+                <a href="https://facebook.com"><img src="images/facebook.jpg" alt="Facebook" width="35"></a>
+                <a href="https://twitter.com"><img src="images/twitter.jpg" alt="Twitter" width="35"></a>
+                <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram" width="35"></a>
+            </nav>
+        </footer>  
+    </body>
+</html>
