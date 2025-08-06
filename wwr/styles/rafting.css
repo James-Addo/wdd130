@@ -603,7 +603,7 @@ button:hover {
     border: 1px solid black;
     width: 153px;
     text-align: center;
-    background-color: var(--secondary-color);
+    background-color: navy;
     color: #fff;
     opacity: 0.8;
     font-weight: bold;
@@ -670,7 +670,7 @@ td {
 .arrow-right:hover {
     color: #FFA500; /* Orange (Web) */
     font-weight: 1000;
-    background-color: navy;
+    background-color: var(--secondary-color);
 }
 
 
