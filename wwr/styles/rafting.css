@@ -380,7 +380,7 @@ button:hover {
 }
 
 .message article {
-    margin: 5px 0 50px 190px;
+    margin: 5px 0 20px 190px;
     opacity: 0.9;
     background-color: var(--accent2-color);
     height: 40px;
